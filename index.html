@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     PASSWORD SCREEN
+========================= -->
+
+<div class="password-screen" id="passwordScreen">
+
+    <div class="password-box">
+
+        <div class="small-label">
+            A SPECIAL DAY
+        </div>
+
+        <h1>Happy Birthday.</h1>
+
+        <p>
+            A little website made<br>
+            especially for you.
+        </p>
+
+        <div class="password-line"></div>
+
+        <div class="password-hint">
+            PASSWORD : <strong>111111</strong>
+        </div>
+
+        <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter password"
+            maxlength="6"
+        >
+
+        <button id="enterButton">
+            ENTER
+        </button>
+
+        <p class="error" id="passwordError">
+            Password salah.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     MAIN WEBSITE
+========================= -->
+
+<div class="website" id="website">
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>BD.</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#moments">Moments</a>
+            <a href="#letter">Letter</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#birthday">Birthday</a>
+        </nav>
+
+        <button class="music-button" id="musicButton">
+            <span id="musicIcon">♪</span>
+            <span id="musicText">Music</span>
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         HOME
+    ========================= -->
+
+    <main>
+
+        <section class="hero section" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    TODAY IS YOUR DAY
+                </p>
+
+                <h1>
+                    Happy<br>
+                    <span>Birthday.</span>
+                </h1>
+
+                <p class="hero-description">
+                    One simple page for one special person.
+                    Take your time and enjoy every little part of it.
+                </p>
+
+                <button class="outline-button" onclick="goToSection('moments')">
+                    Explore
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+            <div class="hero-photo">
+
+                <div class="photo-frame">
+
+                    <img src="images/foto1.jpg" alt="Birthday Photo">
+
+                    <div class="photo-number">
+                        01 / 08
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="scroll-indicator">
+                SCROLL
+                <span></span>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MOMENTS
+        ========================= -->
+
+        <section class="section moments-section" id="moments">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    01 — MOMENTS
+                </p>
+
+                <h2>
+                    Some moments<br>
+                    worth remembering.
+                </h2>
+
+                <p>
+                    Tidak harus selalu menjadi momen besar.
+                    Kadang hal sederhana justru menjadi sesuatu
+                    yang paling kita ingat.
+                </p>
+
+            </div>
+
+
+            <div class="moments-grid">
+
+                <article class="moment-card">
+
+                    <div class="moment-image">
+                        <img src="images/foto2.jpg" alt="Moment 1">
+                        <span>01</span>
+                    </div>
+
+                    <h3>First Moment</h3>
+
+                    <p>
+                        Everything starts with a simple moment.
+                    </p>
+
+                </article>
+
+
+                <article class="moment-card">
+
+                    <div class="moment-image">
+                        <img src="images/foto3.jpg" alt="Moment 2">
+                        <span>02</span>
+                    </div>
+
+                    <h3>Good Times</h3>
+
+                    <p>
+                        Small memories that became something special.
+                    </p>
+
+                </article>
+
+
+                <article class="moment-card">
+
+                    <div class="moment-image">
+                        <img src="images/foto4.jpg" alt="Moment 3">
+                        <span>03</span>
+                    </div>
+
+                    <h3>Another Day</h3>
+
+                    <p>
+                        Another picture, another story to remember.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LETTER
+        ========================= -->
+
+        <section class="section letter-section" id="letter">
+
+            <div class="letter-layout">
+
+                <div class="letter-title">
+
+                    <p class="eyebrow">
+                        02 — A LETTER
+                    </p>
+
+                    <h2>
+                        Just a few<br>
+                        words for you.
+                    </h2>
+
+                </div>
+
+
+                <div class="letter-content">
+
+                    <p class="letter-date">
+                        29.09.2026
+                    </p>
+
+                    <p>
+                        Hey,
+                    </p>
+
+                    <p>
+                        Hari ini bukan cuma tentang bertambahnya umur.
+                        Ini tentang semua hal yang sudah kamu lewati
+                        dan semua hal baik yang masih menunggu di depan.
+                    </p>
+
+                    <p>
+                        Semoga di umur yang baru ini kamu menemukan
+                        lebih banyak alasan untuk tersenyum, lebih banyak
+                        hal yang bisa dibanggakan, dan lebih banyak
+                        momen yang ingin kamu simpan.
+                    </p>
+
+                    <p>
+                        Keep going.
+                        You're doing better than you think.
+                    </p>
+
+                    <div class="signature">
+                        — From someone who cares.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GALLERY
+        ========================= -->
+
+        <section class="section gallery-section" id="gallery">
+
+            <div class="section-heading gallery-heading">
+
+                <p class="eyebrow">
+                    03 — GALLERY
+                </p>
+
+                <h2>
+                    A few pictures.
+                </h2>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item large">
+                    <img src="images/foto5.jpg" alt="Gallery 1">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/foto6.jpg" alt="Gallery 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/foto7.jpg" alt="Gallery 3">
+                </div>
+
+                <div class="gallery-item wide">
+                    <img src="images/foto8.jpg" alt="Gallery 4">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BIRTHDAY
+        ========================= -->
+
+        <section class="section birthday-section" id="birthday">
+
+            <div class="birthday-content">
+
+                <p class="eyebrow">
+                    04 — BIRTHDAY
+                </p>
+
+                <h2>
+                    Make this year<br>
+                    <span>count.</span>
+                </h2>
+
+                <p>
+                    Another year.
+                    Another chapter.
+                    More things to discover.
+                </p>
+
+                <div class="birthday-date">
+
+                    <div>
+                        <strong id="days">00</strong>
+                        <span>DAYS</span>
+                    </div>
+
+                    <div>
+                        <strong id="hours">00</strong>
+                        <span>HOURS</span>
+                    </div>
+
+                    <div>
+                        <strong id="minutes">00</strong>
+                        <span>MINUTES</span>
+                    </div>
+
+                    <div>
+                        <strong id="seconds">00</strong>
+                        <span>SECONDS</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL
+        ========================= -->
+
+        <section class="section final-section">
+
+            <div class="final-content">
+
+                <p class="eyebrow">
+                    ONE LAST THING
+                </p>
+
+                <h2>
+                    Happy Birthday,
+                    <span>once again.</span>
+                </h2>
+
+                <p>
+                    May the next chapter of your life
+                    be filled with good people,
+                    good memories and good things.
+                </p>
+
+                <button class="dark-button" id="surpriseButton">
+                    Open Surprise
+                    <span>→</span>
+                </button>
+
+                <div class="surprise-message" id="surpriseMessage">
+
+                    <div class="surprise-line"></div>
+
+                    <p>
+                        "The best is yet to come."
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div>
+            BD.
+        </div>
+
+        <p>
+            Made with care.
+        </p>
+
+        <span>
+            © 2026
+        </span>
+
+    </footer>
+
+</div>
+
+
+<!-- =========================
+     LIGHTBOX
+========================= -->
+
+<div class="lightbox" id="lightbox">
+
+    <button id="closeLightbox">
+        ×
+    </button>
+
+    <img id="lightboxImage" src="" alt="Preview">
+
+</div>
+
+
+<!-- MUSIC -->
+
+<audio id="backgroundMusic" loop>
+    <source src="music/music.mp3" type="audio/mpeg">
+</audio>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
